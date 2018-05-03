@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
+
+import GetUserDetails from './get_user';
 class App extends Component {
   render(){
     return(
-      <h1>React Simple Starter</h1>
+      <GetUserDetails />
     )
   }
 }

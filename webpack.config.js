@@ -4,7 +4,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    publicPath: '/',
+  publicPath: '/',
     filename: 'bundle.js'
   },
   module: {
@@ -17,5 +17,8 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
   }
 };
