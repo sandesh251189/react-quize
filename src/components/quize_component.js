@@ -9,7 +9,7 @@ class Quize extends Component {
 }
 renderQuestiosOp(array){
 return array.map(choice=>{
-    return <li key={choice}>{choice}</li>
+    return <li key={choice}><input type="radio" value={choice}  />{choice}</li>
 })
 }
 renderQuestion(){
@@ -25,7 +25,7 @@ renderQuestion(){
     console.log(this.props.questions)
     return(
       <div>
-      <h4>This is Quize Component</h4>
+      <h4>This is Quiz Component</h4>
       User Name: {this.props.userdetails.username}<br />
       Counter:{this.state.counter}
       {this.renderQuestion()}
